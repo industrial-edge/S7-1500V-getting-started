@@ -1,0 +1,52 @@
+﻿FUNCTION_BLOCK "GetLicenseInfo"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_OUTPUT 
+      LicenseInfo { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : Struct
+         active { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : UDInt;
+         stateNum { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : UDInt;
+         remainingTime { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : ULInt;
+         stateText { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : String;
+      END_STRUCT;
+   END_VAR
+
+   VAR 
+      instReadRecord {InstructionName := 'RDREC'; LibVersion := '1.0'; ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : RDREC;
+      statLicenseInfo { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : Struct
+         active { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : UDInt;
+         stateNum { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : UDInt;
+         remainingTime { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : ULInt;
+         stateText { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : String;
+      END_STRUCT;
+      statPos { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : DInt;
+      statRecord { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : Array[0..370] of Byte;
+   END_VAR
+
+   VAR_TEMP 
+      tempRv : DInt;
+   END_VAR
+
+
+BEGIN
+	#instReadRecord(REQ    := true,
+	             ID        := 50,
+	             INDEX     := 102,
+	             MLEN      := 0,
+	             RECORD    := #statRecord);
+	
+	#statPos := 0;
+	#tempRv := READ_LITTLE(src_array := #statRecord, dest_Variable => #statLicenseInfo.active, pos := #statPos);
+	
+	#statPos := 4;
+	#tempRv := READ_LITTLE(src_array := #statRecord, dest_Variable => #statLicenseInfo.stateNum, pos := #statPos);
+	
+	#statPos := 8;
+	#tempRv := READ_LITTLE(src_array := #statRecord, dest_Variable => #statLicenseInfo.remainingTime, pos := #statPos);
+	
+	Chars_TO_Strg(Chars  := #statRecord,
+	              pChars := 16,
+	              Cnt    := 255,
+	              Strg   => #statLicenseInfo.stateText);
+	
+END_FUNCTION_BLOCK
+
