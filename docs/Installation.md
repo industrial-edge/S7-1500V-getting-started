@@ -59,11 +59,15 @@ Change to the Memory tab and check the check box "Reserve all guest memory (All 
 
 ![ESXi_server_settings_6](graphics/ESXi_server_settings_7.png)
 
-Finally, add the network card to your VM as a PCI device.
+Proceed by adding the network card to your VM as a PCI device.
 
 ![ESXi_server_settings_3](graphics/ESXi_server_settings_3.png)
 
 ![ESXi_server_settings_4](graphics/ESXi_server_settings_4.png)
+
+Finally, setup the latency sensitivity.
+
+![Latency_sensitivity](graphics/Latency_sensitivity.png)
 
 ## Configure 1517V NIC isolation on IEVD
 
