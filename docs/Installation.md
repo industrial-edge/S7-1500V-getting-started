@@ -47,7 +47,7 @@ In your ESXi Host Client UI go to the Navigator -> Host -> Manage and open your 
 
 This chapter deals with the configuration of the IEVD. These changes must be made whenever a new IEVD is used. Make sure, that the IEVD has 2 CPU Cores to ensure the realtime behavior of the 1517V and 6 GB of RAM. The reservation of computation power in MHz can be calculated using the following formula:
 
-> Reservation (MHz) = Number of CPU core sof IEVD-VM * Frequency of the host CPU (MHz)
+> Reservation (MHz) = Number of CPU cores of IEVD VM * Frequency of the host CPU (MHz)
 
 Set also the limit to "Unlimited" for save measure.
 
