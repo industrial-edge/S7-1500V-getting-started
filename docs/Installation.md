@@ -101,13 +101,14 @@ Proceed by writing down the noted NIC name ("ens192" in this case). Moreover, ad
 
 ![Installed_apps](graphics/Installed_apps.png)
 
-2. Open the app, setup the IP address and subnet mask of vPLC. Finally, click on button "Save":
- 
-
 > **Important**
 >
 > If you use IEVD and cannot install the CPU 1517V application, then double check if you have the required HW configuration (at least 2 CPU cores and 6 GB of Memory) and followed to steps in the previous chapter [Configure 1517V NIC isolation on IEVD](#configure-1517v-nic-isolation-on-ievd) correctly.
 >
+
+2. Open the app, setup the IP address and subnet mask of vPLC. Finally, click on button "Save":
+ 
+
 
 ## Configure TIA Portal project
 
