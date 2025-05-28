@@ -108,7 +108,7 @@ Proceed by writing down the noted NIC name ("ens192" in this case). Moreover, ad
 
 2. Open the app, setup the IP address and subnet mask of vPLC. Finally, click on button "Save":
 
-![vPLC_IP_address_setup](graphics/ vPLC_IP_address_setup.png)
+![vPLC_IP_address_setup](graphics/vPLC_IP_address_setup.png)
 
 ## Configure TIA Portal project
 
