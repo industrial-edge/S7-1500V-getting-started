@@ -7,7 +7,7 @@
     - [Configure PCI passthrough](#configure-pci-passthrough)
   - [Configure the ESXi IEVD settings](#configure-the-esxi-ievd-settings)
   - [Configure 1517V NIC isolation on IEVD](#configure-1517v-nic-isolation-on-ievd)
-  - [Install 1517V application](#install-1517v-application)
+  - [Install 1517V application and setup its IP address](#install-1517v-application-and-setup-its-ip-address)
   - [Configure TIA Portal project](#configure-tia-portal-project)
       - [Option 1: Change device](#option-1-change-device)
       - [Option 2: Start from scratch](#option-2-start-from-scratch)
@@ -96,7 +96,6 @@ Proceed by writing down the noted NIC name ("ens192" in this case). Moreover, ad
 >
 
 ## Install 1517V application and setup its IP address
-
 
 1. Install the app CPU1517V from IEM on your IEVD as any other app. When the app is intsalled, it should appear in the UI of IEVD:
 
