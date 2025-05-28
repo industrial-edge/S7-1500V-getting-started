@@ -106,7 +106,7 @@ Proceed by writing down the noted NIC name ("ens192" in this case). Moreover, ad
 > If you use IEVD and cannot install the CPU 1517V application, then double check if you have the required HW configuration (at least 2 CPU cores and 6 GB of Memory) and followed to steps in the previous chapter [Configure 1517V NIC isolation on IEVD](#configure-1517v-nic-isolation-on-ievd) correctly.
 >
 
-2. Open the app, setup the IP address and subnet mask of vPLC. Finally, click on button "Save":
+2. Open the app, setup the IP Address and Subnet Mask of vPLC. Finally, click on button "Set IP":
 
 ![vPLC_IP_address_setup](graphics/vPLC_IP_address_setup.png)
 
@@ -140,12 +140,6 @@ Then, configure the desire IP address of your PLC in its Properties (Devices & N
 >
 
 ## Download TIA Portal project into 1517V
-
-First of all, go to your IED UI, open the UI of CPU 1517V application, assign a free IP address, Subnet mask and confirm with "Set IP". You will need this address to identify the PLC in TIA Portal during the initial download. Although the IP address hasn't been assigned yet, you can assign it within the UI before downloading the TIA project for the first time.
-
-![Download_TIA_project_1](graphics/Download_TIA_project_1.png)
-
-![Download_TIA_project_7](graphics/Download_TIA_project_7.png)
 
 In TIA Portal select the PLC and press the button for downloading the project into PLC.
 
