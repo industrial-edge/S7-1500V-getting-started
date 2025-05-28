@@ -3,7 +3,7 @@
 - [1517V Getting Started: Installation](#1517v-getting-started-installation)
   - [Overview of example environment](#overview-of-example-environment)
   - [Configure the ESXi settings](#configure-the-esxi-settings)
-    - [Configure of power management](#configure-of-power-management)
+    - [Configure power management](#configure-power-management)
     - [Configure PCI passthrough](#configure-pci-passthrough)
   - [Configure the ESXi IEVD settings](#configure-the-esxi-ievd-settings)
   - [Configure 1517V NIC isolation on IEVD](#configure-1517v-nic-isolation-on-ievd)
@@ -25,11 +25,11 @@
 
 ## Configure the ESXi settings
 
-The following subsections needs to be applied to the ESXi environment to ensure the best possible performance.
+The settings described in the following subsections need to be done in the ESXi environment to ensure the best possible performance.
 
 More information can be found in [this manual](https://support.industry.siemens.com/cs/mdm/109825448?c=173600339979&lc=en-us) which is used as reference for this section.
 
-### Configure of power management
+### Configure power management
 
 To achieve maximum performance and improve stability and reliability, change the power management policy to "High performance." Go to the Navigator in your ESXi Host Client UI -> Host -> Manage -> open the Hardware tab. In this tab click on "Change policy", select "High performance" and click on OK.
 
