@@ -95,11 +95,15 @@ Proceed by writing down the noted NIC name ("ens192" in this case). Moreover, ad
 > After isolating the 1517V NIC, the isolated NIC should disappear from the settings.
 >
 
-## Install 1517V application
+## Install 1517V application and setup its IP address
 
-In order to run the 1517V part of this getting started as a whole, the 1517V application should be installed on your IED:
+
+1. Install the app CPU1517V from IEM on your IEVD as any other app. When the app is intsalled, it should appear in the UI of IEVD:
 
 ![Installed_apps](graphics/Installed_apps.png)
+
+2. Open the app, setup the IP address and subnet mask of vPLC. Finally, click on button "Save":
+ 
 
 > **Important**
 >
