@@ -1,4 +1,4 @@
-﻿FUNCTION_BLOCK "GetLicenseInfo"
+FUNCTION_BLOCK "GetLicenseInfo"
 { S7_Optimized_Access := 'TRUE' }
 VERSION : 0.1
    VAR_OUTPUT 
@@ -48,5 +48,5 @@ BEGIN
 	              Cnt    := 255,
 	              Strg   => #statLicenseInfo.stateText);
 	
+	#LicenseInfo := #statLicenseInfo;
 END_FUNCTION_BLOCK
-
