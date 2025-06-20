@@ -3,11 +3,11 @@
 - [1517V Getting Started: Installation](#1517v-getting-started-installation)
   - [Overview of example environment](#overview-of-example-environment)
   - [Configure the ESXi settings](#configure-the-esxi-settings)
-    - [Configure of power management](#configure-of-power-management)
+    - [Configure power management](#configure-power-management)
     - [Configure PCI passthrough](#configure-pci-passthrough)
   - [Configure the ESXi IEVD settings](#configure-the-esxi-ievd-settings)
   - [Configure 1517V NIC isolation on IEVD](#configure-1517v-nic-isolation-on-ievd)
-  - [Install 1517V application](#install-1517v-application)
+  - [Install 1517V application and setup its IP address](#install-1517v-application-and-setup-its-ip-address)
   - [Configure TIA Portal project](#configure-tia-portal-project)
       - [Option 1: Change device](#option-1-change-device)
       - [Option 2: Start from scratch](#option-2-start-from-scratch)
@@ -25,11 +25,11 @@
 
 ## Configure the ESXi settings
 
-The following subsections needs to be applied to the ESXi environment to ensure the best possible performance.
+The settings described in the following subsections need to be done in the ESXi environment to ensure the best possible performance.
 
 More information can be found in [this manual](https://support.industry.siemens.com/cs/mdm/109825448?c=173600339979&lc=en-us) which is used as reference for this section.
 
-### Configure of power management
+### Configure power management
 
 To achieve maximum performance and improve stability and reliability, change the power management policy to "High performance." Go to the Navigator in your ESXi Host Client UI -> Host -> Manage -> open the Hardware tab. In this tab click on "Change policy", select "High performance" and click on OK.
 
@@ -47,7 +47,7 @@ In your ESXi Host Client UI go to the Navigator -> Host -> Manage and open your 
 
 This chapter deals with the configuration of the IEVD. These changes must be made whenever a new IEVD is used. Make sure, that the IEVD has 2 CPU Cores to ensure the realtime behavior of the 1517V and 6 GB of RAM. The reservation of computation power in MHz can be calculated using the following formula:
 
-> Reservation (MHz) = Number of CPU core sof IEVD-VM * Frequency of the host CPU (MHz)
+> Reservation (MHz) = Number of CPU cores of IEVD VM * Frequency of the host CPU (MHz)
 
 Set also the limit to "Unlimited" for save measure.
 
@@ -95,9 +95,9 @@ Proceed by adding the noted NIC name ("ens192" in this case). Next, add Annotati
 > After isolating the 1517V NIC, the isolated NIC should disappear from the settings.
 >
 
-## Install 1517V application
+## Install 1517V application and setup its IP address
 
-In order to run the 1517V part of this getting started as a whole, the 1517V application should be installed on your IED:
+1. Install the CPU 1517V app from IEM onto your IEVD, just like any other app. Once the installation is complete, the app will appear in the IEVD user interface:
 
 ![Installed_apps](graphics/Installed_apps.png)
 
@@ -105,6 +105,10 @@ In order to run the 1517V part of this getting started as a whole, the 1517V app
 >
 > If you use IEVD and cannot install the CPU 1517V application, then double check if you have the required HW configuration (at least 2 CPU cores and 6 GB of Memory) and followed to steps in the previous chapter [Configure 1517V NIC isolation on IEVD](#configure-1517v-nic-isolation-on-ievd) correctly.
 >
+
+2. Open the app, setup the IP Address and Subnet Mask of Virtual PLC. Finally, click on button "Set IP":
+
+![vPLC_IP_address_setup](graphics/vPLC_IP_address_setup.png)
 
 ## Configure TIA Portal project
 
@@ -136,12 +140,6 @@ Then, configure the desire IP address of your PLC in its Properties (Devices & N
 >
 
 ## Download TIA Portal project into 1517V
-
-First of all, go to your IED UI, open the UI of CPU 1517V application, assign a free IP address, Subnet mask and confirm with "Set IP". You will need this address to identify the PLC in TIA Portal during the initial download. Although the IP address hasn't been assigned yet, you can assign it within the UI before downloading the TIA project for the first time.
-
-![Download_TIA_project_1](graphics/Download_TIA_project_1.png)
-
-![Download_TIA_project_7](graphics/Download_TIA_project_7.png)
 
 In TIA Portal select the PLC and press the button for downloading the project into PLC.
 
