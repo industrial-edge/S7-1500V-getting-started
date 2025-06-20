@@ -86,7 +86,7 @@ Then, after closing the LAN Network window change to Resource Manager and see th
 
 ![IED_resource_manager_NIC_isolation_3](graphics/IED_resource_manager_NIC_isolation_3.png)
 
-Proceed by writing down the noted NIC name ("ens192" in this case). Moreover, add Annotation of this NIC isolation by clicking on another "+" on right side. Write down the name of the isolated NIC "1517V". Finally, click on Submit.
+Proceed by adding the noted NIC name ("ens192" in this case). Next, add Annotation of this NIC isolation by clicking on another "+" on the right handed side. For the CPU1517V, use the 'vplc_x1' annotation and enter it in the appropriate field. To complete the process, click 'Submit'.
 
 ![IED_resource_manager_NIC_isolation_4](graphics/IED_resource_manager_NIC_isolation_4.png)
 
