@@ -97,7 +97,7 @@ Proceed by writing down the noted NIC name ("ens192" in this case). Moreover, ad
 
 ## Install 1517V application and setup its IP address
 
-1. Install the app CPU1517V from IEM on your IEVD as any other app. When the app is intsalled, it should appear in the UI of IEVD:
+1. Install the CPU 1517V app from IEM onto your IEVD, just like any other app. Once the installation is complete, the app will appear in the IEVD user interface:
 
 ![Installed_apps](graphics/Installed_apps.png)
 
@@ -106,7 +106,7 @@ Proceed by writing down the noted NIC name ("ens192" in this case). Moreover, ad
 > If you use IEVD and cannot install the CPU 1517V application, then double check if you have the required HW configuration (at least 2 CPU cores and 6 GB of Memory) and followed to steps in the previous chapter [Configure 1517V NIC isolation on IEVD](#configure-1517v-nic-isolation-on-ievd) correctly.
 >
 
-2. Open the app, setup the IP Address and Subnet Mask of vPLC. Finally, click on button "Set IP":
+2. Open the app, setup the IP Address and Subnet Mask of Virtual PLC. Finally, click on button "Set IP":
 
 ![vPLC_IP_address_setup](graphics/vPLC_IP_address_setup.png)
 
