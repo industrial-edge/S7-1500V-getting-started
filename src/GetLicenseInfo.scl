@@ -31,12 +31,12 @@ BEGIN
 	
    // The function block provides a datarecord for the licensing state information, which is read by using the function “RDREC: Read data record”
    // Following the meaning of the State number (stateNum), more detailed can be found in the function manual
-   // 1: Not connected to backend service: The application is started but there is no hardware or address configuration on it.
-   // 2: Connected to backend service: The application is started but there is no hardware or address configuration on it.
-   // 3: License granted
-   // 4: In default grace period: <xyz> minutes to expire
-   // 5: In extended grace period: <xyz> hours to expire
-   // 6: Grace period has ended: Cannot enter RUN mode
+   // 0: Not connected to backend service: The application is started but there is no hardware or address configuration on it.
+   // 1: Connected to backend service: The application is started but there is no hardware or address configuration on it.
+   // 2: License granted
+   // 3: In default grace period: <xyz> minutes to expire
+   // 4: In extended grace period: <xyz> hours to expire
+   // 5: Grace period has ended: Cannot enter RUN mode
 
    #instReadRecord(REQ    := true,
 	             ID        := 50,
