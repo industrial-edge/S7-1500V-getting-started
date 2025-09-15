@@ -39,17 +39,21 @@ Before the assignment, you need to purchase the subscriptions of the application
 
 ## Identify which device has taken the license
 
-To identify which device has been assigned the license, click on "See Granted 1 Device(s)" as shown in the allocation image. A window will open displaying the device ID.
+To identify which device has been assigned the license, click on "View list of granted device(s)".
+
+![S7-1500V_Licensing_6](/docs/graphics/S7-1500V_Licensing_6.png)
+
+Then, the list of devices with granted CPU1517V licenses is visualized and you can see the ID(s) of these devices:
+
+![S7-1500V_Licensing_7](/docs/graphics/S7-1500V_Licensing_7.png)
+
+When you open the app CPU1517V, the license status will show "License granted". If the device doesn't have a license, it will display "Not connected to backend service".
 
 ![Licensing_Granted_ED](/docs/graphics/Licensing_Granted_ED.png)
 
-Now, you can search for the device associated with this device ID. To do this, log into your IEM, navigate to "Edge Devices," select one of your devices, and check the "Edge Device ID" under "Additional Information" on the right side.
+Now, you can search for the device associated with this device ID. To do this, log into your IEM, navigate to "Edge Devices," select one of your devices, and check the "Device ID" under "Additional Information" on the right side. Alternatively, the ID is visible also in URL.
 
-![Licensing_check_device_ID_in_IEM](/docs/graphics/Licensing_check_device_ID_in_IEM.png)
-
-If you have many devices and don't want to manually search for the ID in each one, you can add your device ID to the URL in your "Edge Device"-screen. For example: https://iem.demo.siemens.com/iem-ui/#/devices/a3391c0ca878468e93fb0aba79ecd8ac.
-
-![Licensing_add_ID_in_URL](/docs/graphics/Licensing_add_ID_in_URL.png)
+![S7-1500V_Licensing_7](/docs/graphics/S7-1500V_Licensing_8.png)
 
 When you open the 1517V-App, the license status will show "License granted". If the device doesn't have a license, it will display "Not connected to backend service".
 
@@ -62,6 +66,7 @@ There are several ways to check the license of the CPU 1517V, such as using the 
 Once you have compiled and downloaded the project, you can monitor the FB. The image below shows whether the license is activated, the licensing state number, the remaining time to expiration during the grace period, and the licensing state.
 
 ![Licensing_TIA_License_granted](/docs/graphics/Licensing_TIA_License_granted.png)
+
 
 
 
