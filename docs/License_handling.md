@@ -53,7 +53,7 @@ When you open the app CPU1517V, the license status will show "License granted". 
 
 Now, you can search for the device associated with this device ID. To do this, log into your IEM, navigate to "Edge Devices," select one of your devices, and check the "Device ID" under "Additional Information" on the right side. Alternatively, the ID is visible also in URL.
 
-![S7-1500V_Licensing_7](/docs/graphics/S7-1500V_Licensing_8.png)
+![S7-1500V_Licensing_8](/docs/graphics/S7-1500V_Licensing_8.png)
 
 When you open the 1517V-App, the license status will show "License granted". If the device doesn't have a license, it will display "Not connected to backend service".
 
@@ -66,8 +66,3 @@ There are several ways to check the license of the CPU 1517V, such as using the 
 Once you have compiled and downloaded the project, you can monitor the FB. The image below shows whether the license is activated, the licensing state number, the remaining time to expiration during the grace period, and the licensing state.
 
 ![Licensing_TIA_License_granted](/docs/graphics/Licensing_TIA_License_granted.png)
-
-
-
-
-
