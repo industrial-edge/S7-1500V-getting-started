@@ -8,7 +8,7 @@
 
 ## Description
 
-To work with a CPU 1517V , an access license is required. This chapter explains how to verify the license for the 1517V and how to assign it in the Industrial Edge Hub to your Industrial Edge Management.
+To work with a CPU 1517V , an access license is required. This chapter explains how to verify the license for the CPU1517V and how to assign it in the Industrial Edge Hub to your Industrial Edge Management.
 
 ## Assign license to the IE Hub
 
@@ -62,5 +62,6 @@ There are several ways to check the license of the CPU 1517V, such as using the 
 Once you have compiled and downloaded the project, you can monitor the FB. The image below shows whether the license is activated, the licensing state number, the remaining time to expiration during the grace period, and the licensing state.
 
 ![Licensing_TIA_License_granted](/docs/graphics/Licensing_TIA_License_granted.png)
+
 
 
