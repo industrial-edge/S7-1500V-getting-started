@@ -15,11 +15,11 @@ To work with a CPU 1517V , an access license is required. This chapter explains 
 Before the assignment, you need to purchase the subscriptions of the application licenses at the [Edge Marketplace](https://www.dex.siemens.com/?selected=edge). To use the licenses for the application, at least one license should be allocated to the Industrial Edge Management (IEM) system that the target Industrial Edge Device belongs to. For this, manage the following steps:
 
 1. Log into the [Industrial Edge Hub](https://umipomoh.iehub.eu1.edge.siemens.cloud/home)
-2. Navigate to the Library
+2. Navigate to the Library.
 
  ![S7-1500V_Licensing_1](/docs/graphics/S7-1500V_Licensing_1.png)
 
-3. Open the application “CPU 1517V”
+3. Open the application “CPU 1517V”.
 
      ![S7-1500V_Licensing_2](/docs/graphics/S7-1500V_Licensing_2.png)
 
@@ -27,19 +27,15 @@ Before the assignment, you need to purchase the subscriptions of the application
 
      ![S7-1500V_Licensing_3](/docs/graphics/S7-1500V_Licensing_3.png)
 
-4. Select your subscription according to purchaser's e-mail and click on Manage
+4. Select your subscription according to purchaser's e-mail and click on Manage.
 
 ![S7-1500V_Licensing_4](/docs/graphics/S7-1500V_Licensing_4.png)
 
-5. Choose the target IEM instance
-6. Click on ”Manage Subscriptions”
-7. In the “Actions” column, click “+” to allocate subscriptions
+5. Choose the target IEM instance according to its name and using button + assign the number of neeed licenses. Finally, click on Save.
 
-    ![Licensing_allocate_subscription](/docs/graphics/Licensing_allocate_subscription.png)
+![S7-1500V_Licensing_5](/docs/graphics/S7-1500V_Licensing_5.png)
 
-    In the next window, the licenses can be allocated.
-
-    ![Licensing_allocate_subscription_2](/docs/graphics/Licensing_allocate_subscription_2.png)
+ Please, note that license for one CPU1517V instance running on one Edge Device.
 
 ## Identify which device has taken the license
 
@@ -66,6 +62,7 @@ There are several ways to check the license of the CPU 1517V, such as using the 
 Once you have compiled and downloaded the project, you can monitor the FB. The image below shows whether the license is activated, the licensing state number, the remaining time to expiration during the grace period, and the licensing state.
 
 ![Licensing_TIA_License_granted](/docs/graphics/Licensing_TIA_License_granted.png)
+
 
 
 
