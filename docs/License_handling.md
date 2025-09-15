@@ -21,11 +21,11 @@ Before the assignment, you need to purchase the subscriptions of the application
 
 3. Open the application “CPU 1517V”.
 
-     ![S7-1500V_Licensing_2](/docs/graphics/S7-1500V_Licensing_2.png)
+  ![S7-1500V_Licensing_2](/docs/graphics/S7-1500V_Licensing_2.png)
 
   Then, navigate to License management.
-
-     ![S7-1500V_Licensing_3](/docs/graphics/S7-1500V_Licensing_3.png)
+  
+  ![S7-1500V_Licensing_3](/docs/graphics/S7-1500V_Licensing_3.png)
 
 4. Select your subscription according to purchaser's e-mail and click on Manage.
 
@@ -62,6 +62,7 @@ There are several ways to check the license of the CPU 1517V, such as using the 
 Once you have compiled and downloaded the project, you can monitor the FB. The image below shows whether the license is activated, the licensing state number, the remaining time to expiration during the grace period, and the licensing state.
 
 ![Licensing_TIA_License_granted](/docs/graphics/Licensing_TIA_License_granted.png)
+
 
 
 
