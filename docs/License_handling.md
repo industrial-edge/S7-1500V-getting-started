@@ -16,9 +16,12 @@ Before the assignment, you need to purchase the subscriptions of the application
 
 1. Log into the [Industrial Edge Hub](https://umipomoh.iehub.eu1.edge.siemens.cloud/home)
 2. Navigate to the Library
+
+ ![S7-1500V_Licensing_1](/docs/graphics/S7-1500V_Licensing_1.png)
+
 3. Open the application “CPU 1517V”
 
-    ![Licensing_number_of_subscription_licenses](/docs/graphics/Licensing_number_of_subscription_licenses.png)
+     ![S7-1500V_Licensing_2](/docs/graphics/S7-1500V_Licensing_2.png)
 
     Here, you can view the number of licenses purchased, available, and in use.
 
@@ -58,3 +61,4 @@ There are several ways to check the license of the CPU 1517V, such as using the 
 Once you have compiled and downloaded the project, you can monitor the FB. The image below shows whether the license is activated, the licensing state number, the remaining time to expiration during the grace period, and the licensing state.
 
 ![Licensing_TIA_License_granted](/docs/graphics/Licensing_TIA_License_granted.png)
+
