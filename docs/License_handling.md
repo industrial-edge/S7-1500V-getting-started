@@ -43,11 +43,11 @@ To identify which device has been assigned the license, click on "View list of g
 
 ![S7-1500V_Licensing_6](/docs/graphics/S7-1500V_Licensing_6.png)
 
-Then, the list of devices with granted CPU1517V licenses is visualized and you can see the IDs of these devices:
+Then, the list of devices with granted CPU1517V licenses is visualized and name of your devices is part of this list:
 
 ![S7-1500V_Licensing_7](/docs/graphics/S7-1500V_Licensing_7.png)
 
-Now, you can search for the device associated with this device ID. To do this, log into your IEM, navigate to "Edge Devices," select one of your devices, and check the "Device ID" under "Additional Information" on the right side. Alternatively, the ID is visible also in URL.
+This name corresponds with the device name visible in IEM. To see it, navigate to "Edge Devices" and open your device:
 
 ![S7-1500V_Licensing_8](/docs/graphics/S7-1500V_Licensing_8.png)
 
@@ -62,6 +62,7 @@ There are several ways to check the license of the CPU 1517V, such as using the 
 Once you have compiled and downloaded the project, you can monitor the FB. The image below shows whether the license is activated, the licensing state number, the remaining time to expiration during the grace period, and the licensing state.
 
 ![Licensing_TIA_License_granted](/docs/graphics/Licensing_TIA_License_granted.png)
+
 
 
 
