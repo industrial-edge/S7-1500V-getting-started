@@ -43,7 +43,7 @@ To identify which device has been assigned the license, click on "View list of g
 
 ![S7-1500V_Licensing_6](/docs/graphics/S7-1500V_Licensing_6.png)
 
-Then, the list of devices with granted CPU1517V licenses is visualized and name of your devices is part of this list:
+Then, the list of devices with granted CPU1517V licenses is visualized and name of your device is part of this list:
 
 ![S7-1500V_Licensing_7](/docs/graphics/S7-1500V_Licensing_7.png)
 
@@ -62,6 +62,7 @@ There are several ways to check the license of the CPU 1517V, such as using the 
 Once you have compiled and downloaded the project, you can monitor the FB. The image below shows whether the license is activated, the licensing state number, the remaining time to expiration during the grace period, and the licensing state.
 
 ![Licensing_TIA_License_granted](/docs/graphics/Licensing_TIA_License_granted.png)
+
 
 
 
