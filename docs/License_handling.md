@@ -8,48 +8,52 @@
 
 ## Description
 
-To work with a CPU 1517V , an access license is required. This chapter explains how to verify the license for the 1517V and how to assign it in the Industrial Edge Hub to your Industrial Edge Management.
+To work with a CPU 1517V , an access license is required. This chapter explains how to verify the license for the CPU1517V and how to assign it in the Industrial Edge Hub to your Industrial Edge Management.
 
 ## Assign license to the IE Hub
 
 Before the assignment, you need to purchase the subscriptions of the application licenses at the [Edge Marketplace](https://www.dex.siemens.com/?selected=edge). To use the licenses for the application, at least one license should be allocated to the Industrial Edge Management (IEM) system that the target Industrial Edge Device belongs to. For this, manage the following steps:
 
 1. Log into the [Industrial Edge Hub](https://umipomoh.iehub.eu1.edge.siemens.cloud/home)
-2. Navigate to the Library
-3. Open the application “CPU 1517V”
+2. Navigate to the Library.
 
-    ![Licensing_number_of_subscription_licenses](/docs/graphics/Licensing_number_of_subscription_licenses.png)
+ ![S7-1500V_Licensing_1](/docs/graphics/S7-1500V_Licensing_1.png)
 
-    Here, you can view the number of licenses purchased, available, and in use.
+3. Open the application “CPU 1517V”.
 
-4. Select the entitlement “run-plc” from the dropdown menu to display the used licenses
-5. Choose the target IEM instance
-6. Click on ”Manage Subscriptions”
-7. In the “Actions” column, click “+” to allocate subscriptions
+  ![S7-1500V_Licensing_2](/docs/graphics/S7-1500V_Licensing_2.png)
 
-    ![Licensing_allocate_subscription](/docs/graphics/Licensing_allocate_subscription.png)
+  Then, navigate to License management.
+  
+  ![S7-1500V_Licensing_3](/docs/graphics/S7-1500V_Licensing_3.png)
 
-    In the next window, the licenses can be allocated.
+4. Select your subscription according to purchaser's e-mail and click on Manage.
 
-    ![Licensing_allocate_subscription_2](/docs/graphics/Licensing_allocate_subscription_2.png)
+![S7-1500V_Licensing_4](/docs/graphics/S7-1500V_Licensing_4.png)
+
+5. Choose the target IEM instance according to its name and using button + assign the number of neeed licenses. Finally, click on Save.
+
+![S7-1500V_Licensing_5](/docs/graphics/S7-1500V_Licensing_5.png)
+
+ Please, note that once license for one CPU1517V instance running on one Edge Device is needed.
 
 ## Identify which device has taken the license
 
-To identify which device has been assigned the license, click on "See Granted 1 Device(s)" as shown in the allocation image. A window will open displaying the device ID.
+To identify which device has been assigned the license, click on "View list of granted device(s)".
 
-![Licensing_Granted_ED](/docs/graphics/Licensing_Granted_ED.png)
+![S7-1500V_Licensing_6](/docs/graphics/S7-1500V_Licensing_6.png)
 
-Now, you can search for the device associated with this device ID. To do this, log into your IEM, navigate to "Edge Devices," select one of your devices, and check the "Edge Device ID" under "Additional Information" on the right side.
+Then, the list of devices with granted CPU1517V licenses is visualized and name of your device is part of this list:
 
-![Licensing_check_device_ID_in_IEM](/docs/graphics/Licensing_check_device_ID_in_IEM.png)
+![S7-1500V_Licensing_7](/docs/graphics/S7-1500V_Licensing_7.png)
 
-If you have many devices and don't want to manually search for the ID in each one, you can add your device ID to the URL in your "Edge Device"-screen. For example: https://iem.demo.siemens.com/iem-ui/#/devices/a3391c0ca878468e93fb0aba79ecd8ac.
+This name corresponds with the device name visible in IEM. To see it, navigate to "Edge Devices" and open your device:
 
-![Licensing_add_ID_in_URL](/docs/graphics/Licensing_add_ID_in_URL.png)
+![S7-1500V_Licensing_8](/docs/graphics/S7-1500V_Licensing_8.png)
 
-When you open the 1517V-App, the license status will show "License granted". If the device doesn't have a license, it will display "Not connected to backend service".
+When you open the app CPU1517V, the license status will show "License granted". If the device doesn't have a license, it will display "Not connected to backend service".
 
-![Download_TIA_project_7](/docs/graphics/Licensing_check_license_in_1517V.png)
+![Licensing_check_license_in_1517V](/docs/graphics/Licensing_check_license_in_1517V.png)
 
 ## Check the license with TIA Portal
 
@@ -58,3 +62,11 @@ There are several ways to check the license of the CPU 1517V, such as using the 
 Once you have compiled and downloaded the project, you can monitor the FB. The image below shows whether the license is activated, the licensing state number, the remaining time to expiration during the grace period, and the licensing state.
 
 ![Licensing_TIA_License_granted](/docs/graphics/Licensing_TIA_License_granted.png)
+
+
+
+
+
+
+
+
