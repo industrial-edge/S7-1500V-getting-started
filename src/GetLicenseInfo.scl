@@ -19,7 +19,7 @@ VERSION : 0.1
          stateText { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : String;
       END_STRUCT;
       statPos { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : DInt;
-      statRecord { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : Array[0..370] of Byte;
+      statRecord { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : Array[0..375] of Byte;
    END_VAR
 
    VAR_TEMP 
