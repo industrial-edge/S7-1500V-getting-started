@@ -2,16 +2,18 @@
 
 - [1517V Getting Started: Installation](#1517v-getting-started-installation)
   - [Overview of example environment](#overview-of-example-environment)
+- [Creating a virtual machine using VMWare](#creating-a-virual-machine-using-vmware)
   - [Configure the ESXi settings](#configure-the-esxi-settings)
     - [Configure power management](#configure-power-management)
     - [Configure PCI passthrough](#configure-pci-passthrough)
   - [Configure the ESXi IEVD settings](#configure-the-esxi-ievd-settings)
-  - [Configure 1517V NIC isolation on IEVD](#configure-1517v-nic-isolation-on-ievd)
+- [Configure 1517V NIC isolation on IEVD](#configure-1517v-nic-isolation-on-ievd)
   - [Install 1517V application and setup its IP address](#install-1517v-application-and-setup-its-ip-address)
   - [Configure TIA Portal project](#configure-tia-portal-project)
       - [Option 1: Change device](#option-1-change-device)
       - [Option 2: Start from scratch](#option-2-start-from-scratch)
       - [Networking configuration](#networking-configuration)
+  - [Create a new user with the appropriate rights](#create-a-new-user-with-the-appropriate-rights)
   - [Download TIA Portal project into 1517V](#download-tia-portal-project-into-1517v)
 
 ## Overview of example environment
@@ -22,6 +24,8 @@
 >
 > To be able to make the changes to ESXI and the VM described in the next sections, you need to turn off the IEVD VM.
 >
+> 
+# Creating a virtual machine using VMWare
 
 ## Configure the ESXi settings
 
@@ -69,7 +73,7 @@ Finally, add the network card to your VM as a PCI device.
 
 ![ESXi_server_settings_4](graphics/ESXi_server_settings_4.png)
 
-## Configure 1517V NIC isolation on IEVD
+# Configure 1517V NIC isolation on IEVD
 
 > **Note**
 >
@@ -138,6 +142,22 @@ Then, configure the desire IP address of your PLC in its Properties (Devices & N
 >
 > If the vPLC should be accessible from different network over router, configure also router in here. So far (in version CPU1517V V2.0.1, May 2025) it is only option to configure router on vPLC.
 >
+> 
+
+## Create a new user with the appropriate rights
+
+- Select the Security settings tab on the Project tree and Users and roles
+- Under Roles, create a new role
+!(new_role.png)
+- Go to the runtime rights>S7-1500 V4.* and select the groups involving web server and OPCUA server access
+!(group_selection.png)
+- Under Users, create a new user and under Assigned Roles, check the box of the newly ceated role
+!(user_creation.png)
+- On the Project tree go to Device Configuration of the CPU>General>Profinet interface X1>Web server access and check the box enable web server via IP address of this interface
+!(web_server_access.png)
+- On the Project tree go to Device Configuration of the CPU>General>Web server>General and check the box activate web server on this module
+!(activate_web_server.png)
+
 
 ## Download TIA Portal project into 1517V
 
