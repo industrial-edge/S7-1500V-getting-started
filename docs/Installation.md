@@ -175,7 +175,7 @@ Finally, click on Load. After loading, you can run the PLC. Then, you can go onl
 
 If the PLC's Web server is activated (Properties -> Web server -> General -> "Activate web server on this module" check box is checked) and access to it via PROFINET Interface [X1] is enabled in the Properties of PLC (Properties -> PROFINET Interface [X1] -> Web server access -> "Enable Web server via IP address of this interface" check box is checked), then the Web server should be accessible in the browser.
 
-![Download_TIA_project_6](graphics/web_server.png)
+![Download_TIA_project_6](graphics/web_interface.png)
 
 Finally, the changing values of the variables can be checked.
 
