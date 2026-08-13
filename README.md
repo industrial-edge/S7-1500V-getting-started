@@ -33,16 +33,16 @@ In this getting started guide, the hardware of the Industrial Edge Virtual Devic
 - Access to an Industrial Edge Management System (IEM)
 - Onboarded Industrial Edge Virtual Device with firmware version 1.21 or later on IEM
 - CPU 1517V App available in the catalog of the IEM
-- Access to working station with TIA Portal V20 installed
+- Access to working station with TIA Portal V21 installed
 - The IEVD is reachable from working station
 - ESXi Host Client V8.0.0
 
 ### Used components
 
 - Industrial Edge Management Pro (IEM) V1.11.17
-- Industrial Edge Virtual Device (IEVD) (firmware version: V1.21.1-1-a)
+- Industrial Edge Virtual Device (IEVD) (firmware version: V1.28.1-2-b)
 - CPU 1517V V2.0.0-1.0
-- TIA Portal V20
+- TIA Portal V21
 - Web browser (Google Chrome)
 
 ### TIA Project
