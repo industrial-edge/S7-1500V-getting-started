@@ -148,15 +148,15 @@ Then, configure the desire IP address of your PLC in its Properties (Devices & N
 
 - Select the Security settings tab on the Project tree and Users and roles
 - Under Roles, create a new role
-!(new_role.png)
+![](graphics/new_role.png)
 - Go to the runtime rights>S7-1500 V4.* and select the groups involving web server and OPCUA server access
-!(group_selection.png)
+![](graphics/group_selection.png)
 - Under Users, create a new user and under Assigned Roles, check the box of the newly ceated role
-!(user_creation.png)
+![](graphics/user_creation.png)
 - On the Project tree go to Device Configuration of the CPU>General>Profinet interface X1>Web server access and check the box enable web server via IP address of this interface
-!(web_server_access.png)
+![](graphics/web_server_access.png)
 - On the Project tree go to Device Configuration of the CPU>General>Web server>General and check the box activate web server on this module
-!(activate_web_server.png)
+![](graphics/activate_web_server.png)
 
 
 ## Download TIA Portal project into 1517V
@@ -175,7 +175,7 @@ Finally, click on Load. After loading, you can run the PLC. Then, you can go onl
 
 If the PLC's Web server is activated (Properties -> Web server -> General -> "Activate web server on this module" check box is checked) and access to it via PROFINET Interface [X1] is enabled in the Properties of PLC (Properties -> PROFINET Interface [X1] -> Web server access -> "Enable Web server via IP address of this interface" check box is checked), then the Web server should be accessible in the browser.
 
-![Download_TIA_project_6](graphics/Download_TIA_project_6.png)
+![Download_TIA_project_6](graphics/web_server.png)
 
 Finally, the changing values of the variables can be checked.
 
